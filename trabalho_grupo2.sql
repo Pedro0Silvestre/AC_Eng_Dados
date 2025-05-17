@@ -224,4 +224,5 @@ SELECT cp.codcompra,
 FROM compra as cp
 JOIN possui as po ON cp.codcompra = po.codcompra
 JOIN produto as p ON po.codProduto = p.codProduto
-GROUP BY cp.codcompra;
+GROUP BY cp.codcompra
+ORDER BY cp.codcompra;
